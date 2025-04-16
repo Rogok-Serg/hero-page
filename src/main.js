@@ -1,1 +1,1 @@
-import "./js/animation";
+import "./js/animation.js";
