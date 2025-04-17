@@ -2,30 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/logo-spider.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Hero page</title>
     <link rel="stylesheet" href="./src/style.css?v=1" />
   </head>
   <body class="bg-blue-50 text-gray-800">
-    <section class="min-h-screen flex items-center justify-center px-4">
-      <div
-        class="text-center max-w-2xl opacity-0 translate-y-10 transition-all duration-1000 ease-out"
-        id="hero"
-      >
-        <h1 class="text-4xl md:text-6xl font-bold text-blue-600 mb-6">
-          Вітаємо на нашому сайті!
-        </h1>
-        <p class="text-lg md:text-xl mb-6">
-          Ми створюємо круті веб-продукти для малого бізнесу.
-        </p>
-        <button
-          class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition"
+    <header
+      class="hero relative min-h-screen bg-no-repeat bg-cover bg-center text-white px-4 py-6 flex flex-col px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48"
+    >
+      <nav class="flex items-center justify-between">
+        <img
+          src="./assets/logo-spider.svg"
+          alt="Logo"
+          class="w-16 h-auto animate-fadeIn delay-[200ms]"
+        />
+        <ul
+          class="flex space-x-6 text-lg gap-x-16 nav-list animate-fadeIn delay-[400ms] mt-4 text-base font-inter"
         >
-          Дізнатись більше
+          <li>
+            <a class="text-white hover:text-red-400 transition" href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="text-white hover:text-red-400 transition" href="#"
+              >Tickets</a
+            >
+          </li>
+          <li>
+            <a class="text-white hover:text-red-400 transition" href="#"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a class="text-white hover:text-red-400 transition" href="#"
+              >Booking</a
+            >
+          </li>
+          <li>
+            <a class="text-white hover:text-red-400 transition" href="#"
+              >Socials</a
+            >
+          </li>
+        </ul>
+        <button
+          class="bg-red-800 py-3 px-6 shadow-red-950 md:shadow-md md:shadow-red-500/70 rounded-2xl mt-4 text-base font-inter animate-slideUp delay-[600ms]"
+          type="button"
+        >
+          Get Your Tickets Now
         </button>
+      </nav>
+      <div class="flex justify-center pb-10 flex-1 items-center">
+        <div class="text-center mt-24">
+          <img
+            class="w-full max-w-max mx-auto animate-fadeIn delay-[300ms]"
+            src="./assets/text_spider-man.webp"
+            alt="spider-man"
+          />
+          <div
+            class="flex justify-center flex-col gap-y-4 mt-6 md:flex-row md:items-center md:justify-between"
+          >
+            <p
+              class="text-base mt-4 max-w-lg text-left mt-4 text-base font-inter animate-slideUp delay-[900ms]"
+            >
+               It is the culmination of a trilogy that tells the origin story of
+              Peter Parker, the young and friendly neighborhood Spider-Man, in
+              the Marvel Cinematic Universe (MCU).
+            </p>
+            <button
+              class="bg-red-800 py-3 px-6 shadow-red-950 md:shadow-md md:shadow-red-500/70 rounded-2xl mt-4 text-base font-inter animate-fadeIn delay-[1200ms]"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
       </div>
-    </section>
+    </header>
+
+    <!-- <script type="module" src="./src/main.js"></script> -->
     <script type="module" src="./src/main.js?v=1"></script>
   </body>
 </html>
