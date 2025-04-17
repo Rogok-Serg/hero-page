@@ -16,25 +16,25 @@ body {
   background-image: url(../assets/background_spiderman.webp);
 }
 
-.hero img {
+/* .hero img {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 0.3s;
-}
+} */
 
-.hero .text-center {
+/* .hero .text-center {
   animation: slideUp 1.5s ease-out forwards;
   animation-delay: 0.6s;
-}
+} */
 
-.hero p {
+/* .hero p {
   animation: slideUp 1.5s ease-out forwards;
   animation-delay: 0.9s;
-}
+} */
 
-.hero button {
+/* .hero button {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 1.2s;
-}
+} */
 
 @keyframes fadeIn {
   0% {
