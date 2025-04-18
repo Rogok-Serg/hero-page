@@ -31,8 +31,8 @@
 
 1. **Клонувати репозиторій:**
    ```bash
-   git clone https://github.com/your-username/spiderman-hero-page.git
-   cd spiderman-hero-page
+   git clone https://github.com/Rogok-Serg/hero-page
+   cd hero-page
    npm install
    npm run dev
    npm run build
