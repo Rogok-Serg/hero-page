@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       animation: {
-        fadeIn: "fadeIn 1.5s ease-out forwards",
-        slideUp: "slideUp 1.5s ease-out forwards",
+        combo:
+          "gradientX 5s ease infinite, fadeIn 1.5s ease-out forwards, slideUp 1.5s ease-out forwards",
+        logoEntry: "logoEntry 1.8s ease-out forwards",
       },
       keyframes: {
         fadeIn: {
@@ -15,6 +16,28 @@ export default {
         slideUp: {
           "0%": { transform: "translateY(40px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        gradientX: {
+          "0%, 100%": {
+            "background-position": "0% 50%",
+          },
+          "50%": {
+            "background-position": "100% 50%",
+          },
+        },
+        logoEntry: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(40px) scale(1) rotate(0deg)",
+          },
+          "50%": {
+            opacity: "1",
+            transform: "translateY(0) scale(1.2) rotate(180deg)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0) scale(1) rotate(360deg)",
+          },
         },
       },
       fontFamily: {
