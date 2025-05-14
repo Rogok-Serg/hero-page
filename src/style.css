@@ -17,7 +17,7 @@ body {
 }
 
 .text-outline-white {
-  -webkit-text-stroke: 6px white;
+  -webkit-text-stroke: 4px white;
 }
 
 @keyframes fadeIn {
